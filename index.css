@@ -1,1 +1,7 @@
 @import url(https://lsong.org/css/stylesheet.css);
+@import url(https://lsong.org/stylesheets/button.css);
+
+.question { margin-bottom: 20px; }
+/* label { display: block; margin-bottom: 5px; } */
+input[type="text"], input[type="number"], select { width: 100%; }
+#result { margin-top: 20px; font-weight: bold; }
