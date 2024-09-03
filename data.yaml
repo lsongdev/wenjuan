@@ -1,0 +1,133 @@
+title: 综合学科测验
+description: 这份测验旨在评估学生在数学、科学、语言和历史等多个学科的知识和理解能力。请仔细阅读每个问题，并尽力回答。祝你考试顺利！
+max_score: 100
+time_limit: 90 # 考试时间限制（分钟）
+
+questions:
+  - name: math_algebra
+    label: "解方程：2x + 5 = 13"
+    type: text
+    required: true
+    scoring:
+      strategy: exact
+      score: 10
+      answer: "4"
+
+  - name: science_periodic_table
+    label: "在元素周期表中，符号 'Fe' 代表哪种元素？"
+    type: radio
+    options:
+      - {value: "iron", label: "铁"}
+      - {value: "fluorine", label: "氟"}
+      - {value: "francium", label: "钫"}
+      - {value: "fermium", label: "镄"}
+    required: true
+    scoring:
+      strategy: exact
+      score: 5
+      answer: "iron"
+
+  - name: language_grammar
+    label: "在下面的句子中填入正确的动词形式：'If I _____ (know) the answer, I would tell you.'"
+    type: text
+    required: true
+    scoring:
+      strategy: exact
+      score: 8
+      answer: "knew"
+
+  - name: history_timeline
+    label: "按照时间先后顺序排列以下历史事件：\n1. 美国独立战争\n2. 法国大革命\n3. 英国光荣革命\n4. 俄国十月革命"
+    type: text
+    required: true
+    scoring:
+      strategy: exact
+      score: 12
+      answer: "3,1,2,4"
+
+  - name: math_geometry
+    label: "一个圆的周长是 62.8 厘米，求其半径。(使用 π = 3.14)"
+    type: text
+    required: true
+    scoring:
+      strategy: exact
+      score: 15
+      answer: "10"
+
+  - name: science_biology
+    label: "解释光合作用的过程和其在生态系统中的重要性。"
+    type: textarea
+    rows: 5
+    required: true
+    scoring:
+      strategy: comprehensive
+      score: 20
+      min_length: 100
+      max_length: 300
+      criteria:
+        - description: "正确描述光合作用过程"
+          score: 5
+          keywords: ["二氧化碳", "水", "光能", "叶绿素", "葡萄糖", "氧气"]
+        - description: "解释光能转化为化学能"
+          score: 5
+          keywords: ["光反应", "暗反应", "ATP", "NADPH", "卡尔文循环"]
+        - description: "讨论光合作用在生态系统中的作用"
+          score: 5
+          keywords: ["初级生产者", "食物链", "能量流动", "生物量"]
+        - description: "提及全球碳循环"
+          score: 5
+          keywords: ["碳固定", "碳汇", "大气平衡", "气候变化"]
+
+  - name: language_literature
+    label: "分析下面的诗句，讨论其中的主题和作者可能想要传达的信息：\n'两个黄鹂鸣翠柳，一行白鹭上青天。窗含西岭千秋雪，门泊东吴万里船。'"
+    type: textarea
+    rows: 6
+    required: true
+    scoring:
+      strategy: comprehensive
+      score: 15
+      min_length: 150
+      max_length: 400
+      criteria:
+        - description: "识别诗中的自然意象"
+          score: 3
+          keywords: ["黄鹂", "翠柳", "白鹭", "青天", "西岭", "雪", "东吴", "船"]
+        - description: "分析诗句中的对比手法"
+          score: 3
+          keywords: ["动与静", "近景与远景", "时间跨度", "空间广度"]
+        - description: "讨论诗歌营造的空间感"
+          score: 3
+          keywords: ["上下", "前后", "左右", "立体空间", "panorama"]
+        - description: "解释诗歌所表达的整体意境"
+          score: 3
+          keywords: ["壮阔", "悠远", "生机", "和谐", "天人合一"]
+        - description: "联系诗人的创作背景"
+          score: 3
+          keywords: ["王勃", "唐代", "边塞诗", "羁旅思乡", "才华横溢"]
+
+  - name: history_analysis
+    label: "评估工业革命对社会结构和经济发展的影响。"
+    type: textarea
+    rows: 6
+    required: true
+    scoring:
+      strategy: comprehensive
+      score: 15
+      min_length: 200
+      max_length: 500
+      criteria:
+        - description: "分析技术进步的影响"
+          score: 3
+          keywords: ["蒸汽机", "机械化", "生产效率", "新能源", "交通革命"]
+        - description: "讨论城市化进程"
+          score: 3
+          keywords: ["人口迁移", "城市扩张", "工人阶级", "贫民窟", "公共卫生"]
+        - description: "评估社会阶层变化"
+          score: 3
+          keywords: ["中产阶级", "工人阶级", "社会流动性", "贫富差距", "教育机会"]
+        - description: "解释经济增长模式的转变"
+          score: 3
+          keywords: ["资本主义", "自由市场", "工厂制度", "规模经济", "国际贸易"]
+        - description: "考虑工业革命的环境影响"
+          score: 3
+          keywords: ["污染", "资源消耗", "森林砍伐", "生态破坏", "公共卫生问题"]
