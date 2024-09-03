@@ -79,7 +79,7 @@ questions:
           keywords: ["碳固定", "碳汇", "大气平衡", "气候变化"]
 
   - name: language_literature
-    label: "分析下面的诗句，讨论其中的主题和作者可能想要传达的信息：\n'两个黄鹂鸣翠柳，一行白鹭上青天。窗含西岭千秋雪，门泊东吴万里船。'"
+    label: "分析下面的诗句，讨论其中的主题和作者可能想要传达的信息：<br/>'两个黄鹂鸣翠柳，一行白鹭上青天。窗含西岭千秋雪，门泊东吴万里船。'"
     type: textarea
     rows: 6
     required: true

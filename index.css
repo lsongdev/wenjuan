@@ -2,6 +2,10 @@
 @import url(https://lsong.org/stylesheets/form.css);
 @import url(https://lsong.org/stylesheets/button.css);
 
-.form-field input + label {
-    display: inline-block;
+.form-field input+label {
+  display: inline-block;
+}
+
+textarea {
+  min-width: 100%;
 }
